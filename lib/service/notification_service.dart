@@ -7,8 +7,7 @@ import 'dart:developer' as devtools show log;
 
 class NotificationService {
   Future<String> getAccessToken() async {
-    final jsonCredentials = await rootBundle
-        .loadString('data/kid-route-firebase-adminsdk-3v7vn-78918d7425.json');
+    final jsonCredentials = await rootBundle.loadString('assets/taskmanager-a9fcf-d99c1920a80f.json');
     final creds = auth.ServiceAccountCredentials.fromJson(jsonCredentials);
 
     final jwtToken = _createJwtToken(creds);

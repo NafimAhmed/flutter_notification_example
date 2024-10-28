@@ -19,7 +19,7 @@ class HomeView extends GetView<HomeController> {
             onPressed: () async {
 
 
-              final token = controller.FCMToken.value;
+              final token = 'f8T9rAGwRVCXAGU8U8kVDy:APA91bH2-KBehKXnYoCegoHvCN1Eb1PCXSjQgvstfAanzwvDHjINjaHQFblRjHKtAtC_wFxhumv8qwC6XQ5sRfeCKLbSdjMaCXjryikx6uzH7YnSARfClVJZFFm-BWD6BDEDLknGxQWd';
 
               final accessToken = await NotificationService().getAccessToken();
               print('This is token in -${token}');
